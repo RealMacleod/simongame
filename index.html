@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+  <h2 id="welcome">Welcome to Simon Game</h2>
+  <h1 id="level-title">Press Space to Start</h1>
+  <div class="container">
+    <div class="row"> <!-- исправлено 'lass' на 'class' -->
+      <div type="button" id="green" class="btn green"></div>
+      <div type="button" id="red" class="btn red"></div>
+    </div>
+
+    <div class="row">
+      <div type="button" id="yellow" class="btn yellow"></div>
+      <div type="button" id="blue" class="btn blue"></div>
+    </div>
+  </div>
+
+  <button class="how-to">HOW TO PLAY</button>
+  
+
+  <!-- Исправлен блок диалогового окна -->
+  <div id="dialog" title="HOW TO PLAY">
+    <p>1. Begin the game by pressing Space <br>
+  2. After PC makes his first move - repeat it <br>
+  3. Try to repeat PC moves in the same order
+    </p>
+  </div>
+
+  <script>
+    
+    $(document).ready(function() {
+        $("#dialog").dialog({
+            autoOpen: false, 
+            modal: true, 
+            buttons: {
+                "GOT IT": function() {
+                    $(this).dialog("close"); 
+                }
+            }
+        });
+
+        // Открытие окна при клике на кнопку
+        $(".how-to").on("click", function() {
+            $("#dialog").dialog("open");
+        });
+    });
+  </script>
+
+</div>
+  <script src="game.js" charset="utf-8"></script>
+
+</body>
+
+</html>

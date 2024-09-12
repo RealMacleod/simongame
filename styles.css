@@ -1,0 +1,198 @@
+body {  
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  position: absolute;
+  display: block;
+  width: 99%;
+  height: 99%;
+  
+
+  animation: colorChange 10s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+      background-color: rgb(255, 237, 222);
+  }
+  50% {
+      background-color: rgb(248, 250, 255);
+  }
+  100% {
+      background-color: rgb(255, 237, 222);
+  }
+}
+
+#welcome {
+  font-family: 'SUSE', cursive;
+  font-size: 3.5rem;
+  margin:  2%;
+  color: #8b8181;
+}
+
+
+
+#level-title {
+  font-family: 'SUSE', cursive;
+  font-size: 2.5rem;
+  margin:  2%;
+  color: #585151;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 10px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+}
+
+.how-to {  
+width: 220px;
+height: 51px;
+font-size: large;
+background: linear-gradient(180deg, #dde7fc 0%, #bcf8f8 100%);
+box-shadow: 0px 4px 13.3px -2px rgba(0, 0, 0, 0.25);
+border: none;
+border-radius: 8px;
+margin: 3rem;
+}
+
+.how-to:hover {  
+width: 220px;
+height: 51px;
+font-size: large;
+background: linear-gradient(180deg, #fcddf3 0%, #bcf8f8 100%);
+box-shadow: 0px 4px 13.3px -2px rgba(0, 0, 0, 0.25);
+border: none;
+border-radius: 8px;
+margin: 3rem;
+}
+
+.how-to:active {  
+width: 220px;
+height: 51px;
+font-size: large;
+background: linear-gradient(180deg, #fcddf3 0%, #bcf8f8 100%);
+box-shadow: 0px 4px 13.3px -2px rgba(0, 0, 0, 0.25);
+border: none;
+border-radius: 8px;
+box-shadow: 0px 2px 3px -2px rgba(0, 0, 0, 0.25);
+margin: 3rem;
+}
+
+
+.game-over {
+  background-color: rgb(236, 112, 74);
+  opacity: 0.8;
+}
+
+
+
+.red { 
+background: radial-gradient(50% 50% at 50% 50%, #FFCCBB 0%, #FF9B9B 100%);
+box-shadow: 0px 4px 13.3px -2px rgba(0, 0, 0, 0.25), inset 0px 0px 13px 3px rgba(0, 0, 0, 0.15);
+border-radius: 8px;
+
+}
+
+.green {
+background: radial-gradient(50% 50% at 50% 50%, #E8FDDB 0%, #BCF3BC 100%);
+box-shadow: 0px 4px 13.3px -2px rgba(0, 0, 0, 0.25), inset 0px 0px 13px 3px rgba(0, 0, 0, 0.15);
+border-radius: 8px;
+
+}
+
+.blue {
+
+background: radial-gradient(50% 50% at 50% 50%, #C7F0FF 0%, #9BCBFF 100%);
+box-shadow: 0px 4px 13.3px -2px rgba(0, 0, 0, 0.25), inset 0px 0px 13px 3px rgba(0, 0, 0, 0.15);
+border-radius: 8px;
+
+}
+
+.yellow {
+background: radial-gradient(50% 50% at 50% 50%, #FFF4C7 0%, #FFE69B 100%);
+box-shadow: 0px 4px 13.3px -2px rgba(0, 0, 0, 0.25), inset 0px 0px 13px 3px rgba(0, 0, 0, 0.15);
+border-radius: 8px;
+
+}
+
+.pressed {
+
+background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #EEFEFF 100%);
+box-shadow: 0px 4px 13.3px -2px rgba(0, 0, 0, 0.25), inset 0px 0px 44.9px 17px rgba(0, 0, 0, 0.15);
+border-radius: 8px;
+
+}
+
+
+.ui-dialog {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 20rem !important;
+  background-color: rgba(255, 255, 255) !important; /* Фон окна */
+  border: 2px solid #a1a1a1 !important;; /* Рамка окна */
+  border-radius: 10px !important;; /* Скругленные углы */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Тень */
+  text-align: left;
+  font-family: 'Roboto Condensed', sans-serif  !important;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.ui-dialog-titlebar {
+  display: flex;
+  background-color: #b8a9a9 !important;; /* Фон заголовка */
+  color: rgb(255, 255, 255) !important;; /* Цвет текста заголовка */
+  border: none !important;
+  font-size: 20px; /* Размер шрифта */
+  padding: 10px;  
+  text-align: center;
+  
+}
+
+.ui-dialog-buttonpane {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0) !important; 
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Стили для кнопок в модальном окне */
+.ui-dialog .ui-dialog-buttonpane .ui-button {
+    background-color: #c3c4da; /* Зелёный фон */
+    color: white; /* Белый текст */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Скруглённые углы */   
+    
+}
+
+.ui-button {
+  background-color: rgb(155, 187, 223) !important;
+  border: 1px solid rgb(114, 162, 218) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  display: none !important; /* Убираем кнопку закрытия */
+}
+
+/* Добавляем эффект наведения для кнопки */
+.ui-dialog .ui-dialog-buttonpane .ui-button:hover {
+    background-color: #45a049;
+}
+
